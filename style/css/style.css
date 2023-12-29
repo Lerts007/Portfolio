@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%; }
+
+body {
+  background-color: #0e141b;
+  color: #fff; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+.content {
+  width: 1300px;
+  margin: 0 auto; }
+
+/*HEADER*/
+.header-content {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; }
+
+.logo svg {
+  width: 40px; }
+
+.logo__name {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 125%; }
+
+.menuNavBurger,
+.menuNavBurger-ul {
+  display: none; }
+
+.menuNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.menuNav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%; }
+  .menuNav ul li {
+    margin-right: 20px;
+    list-style-type: none;
+    transition: transform 0.5s, color 0.5s;
+    cursor: pointer; }
+  .menuNav ul li:last-child {
+    margin-right: 0; }
+  @media (hover: hover) {
+    .menuNav ul li:hover {
+      color: #3dc7f1;
+      transform: scale(1.2); } }
+
+/*MAIN*/
+.myStack h3,
+.portfolio h3,
+.aboutMe h3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 125%;
+  text-align: center; }
+
+.mainHeader {
+  height: calc(100vh - 65px); }
+
+.mainHeader-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  flex-direction: column;
+  text-align: center; }
+
+.mainHeader-content__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 125%;
+  width: 500px;
+  background: linear-gradient(270deg, #9517f9, #ff46cb, #09c4ff);
+  background: -webkit-linear-gradient 270deg, #9517f9, #ff46cb, #09c4ff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: h1-animation 5s ease infinite;
+  -webkit-animation: h1-animation 5s ease infinite;
+  background-size: 400% 200%; }
+
+@keyframes h1-animation {
+  0% {
+    background-position: 0% center; }
+  50% {
+    background-position: 50% center; }
+  100% {
+    background-position: 0% center; } }
+.mainHeader-btn {
+  margin-top: 50px;
+  display: flex;
+  gap: 50px; }
+  .mainHeader-btn button {
+    width: 150px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #3dc7f1;
+    border-radius: 25px;
+    color: #fff;
+    transition: all 0.5s; }
+  @media (hover: hover) {
+    .mainHeader-btn button:hover {
+      background-color: #3dc7f1;
+      color: #000; } }
+
+/*ABOUT ME*/
+.aboutMe,
+.myStack,
+.portfolio {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.scrollContent {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: transform 1s, opacity 1s; }
+
+.aboutMe-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center; }
+
+.aboutMe-content__info {
+  width: 700px; }
+
+.myStackCard,
+.portfolioCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px; }
+
+/*MY STACK*/
+.myStackCard {
+  gap: 40px; }
+
+.myStack-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 135px;
+  height: 150px;
+  flex-direction: column;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.5s; }
+  .myStack-card img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px; }
+  @media (hover: hover) {
+    .myStack-card:hover {
+      transform: scale(1.2); } }
+
+.myStack-html {
+  box-shadow: 0 4px 6px -1px #f97316, 0 2px 4px -2px #f97316; }
+
+.myStack-css {
+  box-shadow: 0 4px 6px -1px #3b82f6, 0 2px 4px -2px #3b82f6; }
+
+.myStack-scss {
+  box-shadow: 0 4px 6px -1px #cc6699, 0 2px 4px -2px #cc6699; }
+
+.myStack-js {
+  box-shadow: 0 4px 6px -1px #facc15, 0 2px 4px -2px #facc15; }
+
+.myStack-vue {
+  box-shadow: 0 4px 6px -1px #10b981, 0 2px 4px -2px #10b981; }
+
+/*PORTFOLIO*/
+.portfolioCard {
+  gap: 40px; }
+
+.portfolio-card {
+  width: 320px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px #3dc7f1, 0 2px 4px -2px #3dc7f1;
+  transition: transform 0.5s; }
+  @media (hover: hover) {
+    .portfolio-card:hover {
+      transform: scale(1.1); } }
+
+.portfolio-card-img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden; }
+  .portfolio-card-img img {
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 20px; }
+
+.portfolio-card-btn {
+  display: flex;
+  justify-content: space-around; }
+
+.portfolio-card-btn button {
+  width: 100px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #3dc7f1;
+  border-radius: 25px;
+  color: #fff;
+  transition: all 0.5s; }
+  @media (hover: hover) {
+    .portfolio-card-btn button:hover {
+      background-color: #3dc7f1;
+      color: #000; } }
+
+/*FOOTER*/
+footer {
+  padding-top: 100px;
+  padding-bottom: 30px; }
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; }
+
+/*LOGO FOOTER*/
+.logoFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; }
+
+.logoFooter-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; }
+
+.logoFooter svg {
+  width: 30px; }
+
+/*MENU NAV*/
+.menuNavFooter ul {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; }
+
+.footerLi li {
+  margin-right: 20px;
+  list-style-type: none;
+  transition: color 0.5s;
+  cursor: pointer; }
+.footerLi li a {
+  transition: color 0.5s; }
+.footerLi li:last-child {
+  margin-right: 0; }
+@media (hover: hover) {
+  .footerLi li:hover {
+    color: #3dc7f1; }
+  .footerLi li:hover a {
+    color: #3dc7f1; } }
+
+@media (max-width: 1350px) {
+  .content {
+    width: 1000px; } }
+@media (max-width: 1050px) {
+  .content {
+    width: 768px; } }
+@media (max-width: 780px) {
+  .content {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  .aboutMe-content__info,
+  .mainHeader-content__title {
+    width: 100%; }
+
+  .menuNavBurger {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+
+  .burger__line {
+    width: 40px;
+    height: 5px;
+    margin-top: 5px;
+    border-radius: 2.5px;
+    background-color: #fff;
+    transition: transform 0.5s; }
+
+  .line45deg {
+    transform: translateY(-10px) rotate(45deg); }
+
+  .line-45deg {
+    transform: translateY(10px) rotate(-45deg); }
+
+  .linenone {
+    opacity: 0; }
+
+  .burgerActiv {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 150px;
+    display: block; }
+    .burgerActiv li {
+      margin-top: 20px;
+      list-style-type: none;
+      cursor: pointer; }
+    .burgerActiv li:first-child {
+      margin-top: 0; }
+
+  .menuNav {
+    display: none; } }
+@media (max-width: 520px) {
+  * {
+    font-size: 15px; }
+
+  .mainHeader-content__title {
+    font-size: 30px; }
+
+  .mainHeader-btn button {
+    width: 100px;
+    height: 30px; }
+
+  .aboutMe,
+  .myStack,
+  .portfolio {
+    padding-top: 25px;
+    padding-bottom: 25px; }
+
+  .myStack h3,
+  .portfolio h3,
+  .aboutMe h3 {
+    font-size: 30px; }
+
+  .portfolio-card {
+    width: 300px; }
+
+  footer {
+    padding-top: 25px; }
+
+  .footer-content {
+    justify-content: center; }
+
+  .menuNavFooter {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */

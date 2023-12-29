@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/Logo.svg" />
+    <link rel="stylesheet" href="./style/css/style.css" />
+    <title>Lerts</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content content">
+        <div class="logo">
+          <a href="#">
+            <svg
+              viewBox="0 0 80 80"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="80" height="80" rx="40" fill="#7C92A7" />
+              <path
+                d="M26.1364 61L33.8636 14.4545H43.7045L37.3409 52.8864H57.2955L55.9318 61H26.1364Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <!-- <p class="logo__name">Стрельников Дмитрий</p> -->
+        </div>
+        <div class="menuNavBurger">
+          <div class="burger">
+            <div class="burger__line1 burger__line"></div>
+            <div class="burger__line2 burger__line"></div>
+            <div class="burger__line3 burger__line"></div>
+          </div>
+          <div class="menuNavBurger-ul">
+            <ul>
+              <li id="aboutMe">Обо мне</li>
+              <li id="myStack">Мой стэк</li>
+              <li id="portfolio">Мои проекты</li>
+              <li id="contact">Контакты</li>
+            </ul>
+          </div>
+        </div>
+        <nav class="menuNav">
+          <ul>
+            <li id="aboutMe">Обо мне</li>
+            <li id="myStack">Мой стэк</li>
+            <li id="portfolio">Мои проекты</li>
+            <li id="contact">Контакты</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="mainHeader">
+        <div class="mainHeader-content content">
+          <h1 class="mainHeader-content__title">
+            Привет, меня зовут <br />Стрельников Дмитрий, занимаюсь Frontend
+            разработкой
+          </h1>
+          <div class="mainHeader-btn">
+            <button>Контакты</button> <button>Резюме</button>
+          </div>
+        </div>
+      </section>
+      <section class="aboutMe">
+        <div class="aboutMe-content content scrollContent">
+          <h3>Обо мне</h3>
+          <p class="aboutMe-content__info">
+            Я начинающий frontend разработчик увлеченный созданием
+            интерактивных, доступных и адаптивных веб-сайтов. В моем портфолио
+            мало проектов, но они являются точкой старта в моем путешествии. В
+            своей работе я стремлюсь сделать так, чтобы все было сделанно
+            аккуратно, ровно, читаемо. Давайте вместе делать веб-страницы,
+            которые не только функциональны, но приятны глазу!
+          </p>
+        </div>
+      </section>
+      <section class="myStack">
+        <div class="myStack-content content scrollContent">
+          <h3>Мой стэк</h3>
+          <div class="myStackCard">
+            <div class="myStack-card myStack-html">
+              <img src="./img/stack/html.png" alt="html" />
+              <p>HTML</p>
+            </div>
+            <div class="myStack-card myStack-css">
+              <img src="./img/stack/css.png" alt="css" />
+              <p>CSS</p>
+            </div>
+            <div class="myStack-card myStack-scss">
+              <img src="./img/stack/scss.png" alt="scss" />
+              <p>SCSS</p>
+            </div>
+            <div class="myStack-card myStack-js">
+              <img src="./img/stack/javascript.png" alt="js" />
+              <p>JavaScript</p>
+            </div>
+            <div class="myStack-card myStack-vue">
+              <img src="./img/stack/vue.png" alt="vue" />
+              <p>Vue.js</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio">
+        <div class="portfolio-content content scrollContent">
+          <h3>Моё портфолио</h3>
+          <div class="portfolioCard">
+            <div class="portfolio-card">
+              <div class="portfolio-card-img">
+                <img src="./img/project/Project_3.png" alt="interno" />
+              </div>
+              <div class="portfolio-card-btn">
+                <a
+                  href="https://lerts007.github.io/Interno_Page/"
+                  target="_blank"
+                >
+                  <button>Demo</button>
+                </a>
+                <a
+                  href="https://github.com/Lerts007/Interno_Page"
+                  target="_blank"
+                >
+                  <button>Код</button>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card-img">
+                <img src="./img/project/Project_1.png" alt="To-Do list" />
+              </div>
+              <div class="portfolio-card-btn">
+                <a
+                  href="https://lerts007.github.io/To-do_list/"
+                  target="_blank"
+                >
+                  <button>Demo</button>
+                </a>
+                <a
+                  href="https://github.com/Lerts007/To-do_list"
+                  target="_blank"
+                >
+                  <button>Код</button>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="portfolio-card-img">
+                <img src="./img/project/Project_2.png" alt="yacht club" />
+              </div>
+              <div class="portfolio-card-btn">
+                <a
+                  href="https://lerts007.github.io/Yacht_Club/"
+                  target="_blank"
+                >
+                  <button>Demo</button>
+                </a>
+                <a
+                  href="https://github.com/Lerts007/Yacht_Club"
+                  target="_blank"
+                >
+                  <button>Код</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content content">
+        <div class="logoFooter">
+          <div class="logoFooter-logo">
+            <a href="#">
+              <svg
+                viewBox="0 0 80 80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="80" height="80" rx="40" fill="#7C92A7" />
+                <path
+                  d="M26.1364 61L33.8636 14.4545H43.7045L37.3409 52.8864H57.2955L55.9318 61H26.1364Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <p class="logoFooter__name">Стрельников Дмитрий</p>
+          </div>
+
+          <nav class="menuContact footerLi">
+            <ul>
+              <li>Телефон: <a href="tel:+79268650820">8-(926)-865-08-20</a></li>
+              <li>Почта: <a href="malito:oddff@mail.ru">oddff@mail.ru</a></li>
+              <li>Телеграмм: <a href="https://t.me/Lerts_D">@Lerts_D</a></li>
+            </ul>
+          </nav>
+        </div>
+        <nav class="menuNavFooter footerLi">
+          <h5>Навигация</h5>
+          <ul>
+            <li>Обо мне</li>
+            <li>Мой стэк</li>
+            <li>Мои проекты</li>
+            <li>Контакты</li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+  <script src="./scrol.js"></script>
+</html>
