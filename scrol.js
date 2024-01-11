@@ -37,7 +37,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const menu = document.querySelector(".menuNavBurger-ul");
 
   burger.addEventListener("click", () => {
-    console.log("asd");
+    line1.classList.toggle("line-45deg");
+    line2.classList.toggle("linenone");
+    line3.classList.toggle("line45deg");
+    menu.classList.toggle("burgerActiv");
+  });
+
+  menu.addEventListener("click", () => {
     line1.classList.toggle("line-45deg");
     line2.classList.toggle("linenone");
     line3.classList.toggle("line45deg");

@@ -80,7 +80,8 @@
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  line-height: 125%; }
+  line-height: 125%;
+  scroll-behavior: smooth; }
 
 body {
   background-color: #0e141b;
@@ -111,7 +112,11 @@ a {
 
 .menuNavBurger,
 .menuNavBurger-ul {
-  display: none; }
+  padding-left: 10px;
+  padding-bottom: 10px;
+  display: none;
+  background-color: #0e141b;
+  border-bottom-left-radius: 5px; }
 
 .menuNav {
   display: flex;
@@ -130,14 +135,17 @@ a {
   .menuNav ul li {
     margin-right: 20px;
     list-style-type: none;
-    transition: transform 0.5s, color 0.5s;
+    transition: transform 0.5s;
     cursor: pointer; }
+    .menuNav ul li a {
+      transition: color 0.5s; }
   .menuNav ul li:last-child {
     margin-right: 0; }
   @media (hover: hover) {
     .menuNav ul li:hover {
-      color: #3dc7f1;
-      transform: scale(1.2); } }
+      transform: scale(1.2); }
+    .menuNav ul li:hover a {
+      color: #3dc7f1; } }
 
 /*MAIN*/
 .myStack h3,
@@ -358,6 +366,20 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px; }
+  .menuNavFooter ul li {
+    margin-right: 20px;
+    list-style-type: none;
+    transition: transform 0.5s;
+    cursor: pointer; }
+    .menuNavFooter ul li a {
+      transition: color 0.5s; }
+  .menuNavFooter ul li:last-child {
+    margin-right: 0; }
+  @media (hover: hover) {
+    .menuNavFooter ul li:hover {
+      transform: scale(1.2); }
+    .menuNavFooter ul li:hover a {
+      color: #3dc7f1; } }
 
 .footerLi li {
   margin-right: 20px;
