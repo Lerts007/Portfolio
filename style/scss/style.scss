@@ -1,5 +1,6 @@
 @import "fonts";
 @import "colors";
+@import "formContac";
 
 * {
   margin: 0;
@@ -280,12 +281,24 @@ footer {
   flex-direction: column;
   gap: 20px;
 }
+.formContact__ul li {
+  margin-bottom: 10px;
+}
+.formContact__ul li:last-child {
+  margin-bottom: 0px;
+}
 .logoFooter-logo {
   @include DFCenter();
   gap: 20px;
 }
 .logoFooter svg {
   width: 30px;
+}
+.links {
+  margin-top: 10px;
+}
+.links path {
+  transition: fill 0.5s;
 }
 /*MENU NAV*/
 .menuNavFooter ul {
@@ -301,6 +314,9 @@ footer {
     transition: color 0.5s;
     cursor: pointer;
   }
+  & li path {
+    transition: fill 0.5s;
+  }
   & li a {
     transition: color 0.5s;
   }
@@ -313,6 +329,12 @@ footer {
     }
     & li:hover a {
       color: $color-text-accent;
+    }
+    & li:hover path {
+      fill: $color-text-accent;
+    }
+    .links svg:hover path {
+      fill: $color-text-accent;
     }
   }
 }
