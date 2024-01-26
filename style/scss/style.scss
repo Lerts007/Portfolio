@@ -34,7 +34,8 @@ header {
 .header-content {
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
 }
 .logo svg {
   width: 40px;
@@ -51,7 +52,6 @@ header {
   border-bottom-left-radius: 5px;
 }
 .menuNav {
-  @include DFCenter();
 }
 .menuNav ul {
   display: flex;
@@ -65,7 +65,12 @@ header {
     transition: transform 0.5s;
     cursor: pointer;
     & a {
+      display: flex;
+      gap: 10px;
       transition: color 0.5s;
+    }
+    & path {
+      transition: fill 0.5s;
     }
   }
   & li:last-child {
@@ -78,21 +83,77 @@ header {
     & li:hover a {
       color: $color-text-accent;
     }
+    & li:hover path {
+      fill: $color-text-accent;
+    }
   }
 }
 
 /*MAIN*/
 main {
+  position: relative;
 }
-.myStack,
-.portfolio,
-.aboutMe {
+
+/*SLIDE*/
+.slide {
+  position: fixed;
+  top: calc(50vh - 63.5px);
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  & ul {
+    cursor: pointer;
+  }
+  & li {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+  }
+  & li:first-child {
+    margin-top: 0;
+  }
+  // @media (hover: hover) {
+  //   & li:hover .slide-rotate {
+  //     border: 3px solid $color-text-accent;
+  //   }
+  // }
+}
+.slide-rotate-active {
+  padding: 3px;
+  border-radius: 50%;
+  border: 3px solid $color-text-accent;
+}
+.slide-rotate {
+  padding: 3px;
+  border-radius: 50%;
+  border: 3px solid rgba(61, 199, 241, 0.2);
+}
+.slide-rotate-min {
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+@media (max-width: 1100px) {
+  .slide {
+    display: none;
+  }
+}
+
+#myStack,
+#portfolio,
+#aboutMe {
   & h3 {
     @include Rubik40;
     text-align: center;
   }
 }
-.mainHeader {
+#mainHeader {
   height: calc(100vh - 65px);
 }
 .mainHeader-content {
@@ -148,9 +209,9 @@ main {
   }
 }
 /*ABOUT ME*/
-.aboutMe,
-.myStack,
-.portfolio {
+#aboutMe,
+#myStack,
+#portfolio {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -218,7 +279,7 @@ main {
 }
 
 /*PORTFOLIO*/
-.portfolio {
+#portfolio {
 }
 .portfolioCard {
   gap: 40px;
@@ -310,33 +371,7 @@ footer {
 .links path {
   transition: fill 0.5s;
 }
-/*MENU NAV*/
-.menuNavFooter ul {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  & li {
-    margin-right: 20px;
-    list-style-type: none;
-    transition: transform 0.5s;
-    cursor: pointer;
-    & a {
-      transition: color 0.5s;
-    }
-  }
-  & li:last-child {
-    margin-right: 0;
-  }
-  @media (hover: hover) {
-    & li:hover {
-      transform: scale(1.2);
-    }
-    & li:hover a {
-      color: $color-text-accent;
-    }
-  }
-}
+
 .footerLi {
   & li {
     margin-right: 20px;
@@ -384,6 +419,9 @@ footer {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .header-content {
+    justify-content: space-between;
   }
   .aboutMe-content__info,
   .mainHeader-content__title {
@@ -443,15 +481,15 @@ footer {
     width: 100px;
     height: 30px;
   }
-  .aboutMe,
-  .myStack,
-  .portfolio {
+  #aboutMe,
+  #myStack,
+  #portfolio {
     padding-top: 25px;
     padding-bottom: 25px;
   }
-  .myStack h3,
-  .portfolio h3,
-  .aboutMe h3 {
+  #myStack h3,
+  #portfolio h3,
+  #aboutMe h3 {
     font-size: 30px;
   }
   .portfolio-card {
@@ -462,8 +500,5 @@ footer {
   }
   .footer-content {
     justify-content: center;
-  }
-  .menuNavFooter {
-    display: none;
   }
 }
