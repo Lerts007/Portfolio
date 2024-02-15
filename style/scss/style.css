@@ -321,12 +321,6 @@ main {
 .myStack-vue {
   box-shadow: 0 4px 6px -1px #10b981, 0 2px 4px -2px #10b981; }
 
-.myStack-vuex {
-  box-shadow: 0 4px 6px -1px #10b981, 0 2px 4px -2px #10b981; }
-
-.myStack-axios {
-  box-shadow: 0 4px 6px -1px #3b82f6, 0 2px 4px -2px #3b82f6; }
-
 /*PORTFOLIO*/
 .portfolioCard {
   gap: 40px; }
