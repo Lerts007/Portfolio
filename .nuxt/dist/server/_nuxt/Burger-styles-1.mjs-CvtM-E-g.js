@@ -1,0 +1,5 @@
+const Burger_vue_vue_type_style_index_0_scoped_4fcadcd7_lang = '@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;900&display=swap");.container[data-v-4fcadcd7]{align-items:flex-end;display:flex;flex-direction:column;overflow:hidden;position:fixed;right:10px;top:5px}.burger[data-v-4fcadcd7]{margin-bottom:10px;margin-top:10px}.burger__line[data-v-4fcadcd7]{background-color:#fff;border-radius:2.5px;height:5px;margin-top:5px;transition:transform .5s;width:40px}.burger__line[data-v-4fcadcd7]:first-child{margin-top:0}.line45deg[data-v-4fcadcd7]{transform:translateY(-10px) rotate(45deg)}.line-45deg[data-v-4fcadcd7]{transform:translateY(10px) rotate(-45deg)}.linenone[data-v-4fcadcd7]{opacity:0}.menuNavBurger[data-v-4fcadcd7]{background-color:rgba(14,20,27,.9);border-bottom-left-radius:5px;height:100vh;transform:translateY(40px);transition:transform 1.5s;width:150px}.slideMenuFrom[data-v-4fcadcd7]{transform:translateX(250px)}.slideMenuTo[data-v-4fcadcd7]{transform:translateX(0)}';
+export {
+  Burger_vue_vue_type_style_index_0_scoped_4fcadcd7_lang as default
+};
+//# sourceMappingURL=Burger-styles-1.mjs-CvtM-E-g.js.map
