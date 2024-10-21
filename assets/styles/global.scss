@@ -20,6 +20,12 @@ a {
   margin: 0 auto;
 }
 
+.no-scroll {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
 @media (max-width: 1350px) {
   .content {
     width: 1000px;

@@ -1,5 +1,0 @@
-const Menu_vue_vue_type_style_index_0_scoped_3d7f71f6_lang = '@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;900&display=swap");ul[data-v-3d7f71f6]{display:flex;flex-wrap:wrap;font-family:Rubik,sans-serif;font-size:20px;font-weight:400;gap:10px;line-height:125%}ul li[data-v-3d7f71f6]{cursor:pointer;list-style-type:none;margin-right:20px;transition:transform .5s}ul li a[data-v-3d7f71f6]{display:flex;gap:10px;transition:color .5s}ul li[data-v-3d7f71f6] path{transition:fill .5s}ul li[data-v-3d7f71f6]:last-child{margin-right:0}@media (hover:hover){ul li[data-v-3d7f71f6]:hover{transform:scale(1.2)}ul li:hover a[data-v-3d7f71f6]{color:#3dc7f1}}.active[data-v-3d7f71f6] path{fill:#3dc7f1}@media (max-width:780px){ul[data-v-3d7f71f6]{display:block;position:absolute;right:0;top:0}ul li[data-v-3d7f71f6]{cursor:pointer;list-style-type:none;margin-top:20px}ul li[data-v-3d7f71f6]:first-child{margin-top:0}}@media (max-width:520px){ul li[data-v-3d7f71f6]{margin-top:10px}}';
-export {
-  Menu_vue_vue_type_style_index_0_scoped_3d7f71f6_lang as default
-};
-//# sourceMappingURL=Menu-styles-1.mjs-D0dr3QsU.js.map

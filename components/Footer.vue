@@ -4,7 +4,7 @@
       <div class="logoFooter">
         <div class="logoFooter-logo">
           <a href="#">
-            <img src="/Logo.svg" alt="" />
+            <img src="../public/Logo.svg" alt="" />
           </a>
           <p class="logoFooter__name">Стрельников Дмитрий</p>
         </div>

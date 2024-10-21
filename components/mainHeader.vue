@@ -7,9 +7,9 @@
       </h1>
       <div class="mainHeader-btn">
         <UIButton :text="'Контакты'" @click="activ = true" />
-        <form action="./docs/Resume.pdf" target="_blank">
+        <a href="./Resume.pdf" target="_blank">
           <UIButton :text="'Резюме'" />
-        </form>
+        </a>
       </div>
     </div>
     <Contacts :activ="activ" @update:activ="activ = $event" />
@@ -21,11 +21,21 @@
 import { ref } from "vue";
 
 const activ = ref(false);
+
+watch(activ, (newVal) => {
+  console.log("asdas");
+
+  if (newVal) {
+    document.documentElement.classList.add("no-scroll");
+  } else {
+    document.documentElement.classList.remove("no-scroll");
+  }
+});
 </script>
 
 <style lang="scss" scoped>
 #mainHeader {
-  margin-top: 25px;
+  padding-top: 25px;
   height: 100vh;
 }
 .mainHeader-content {
@@ -69,7 +79,7 @@ const activ = ref(false);
 }
 @media (max-width: 780px) {
   #mainHeader {
-    margin-top: 60px;
+    padding-top: 60px;
   }
 }
 @media (max-width: 520px) {

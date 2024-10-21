@@ -1,5 +1,0 @@
-const Header_vue_vue_type_style_index_0_scoped_f4c76c4b_lang = '@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;900&display=swap");header[data-v-f4c76c4b]{background-color:rgba(14,20,27,.9);height:50px;position:fixed;top:0;width:100vw;z-index:10}.header-content[data-v-f4c76c4b]{gap:60px;padding:10px}.header-content[data-v-f4c76c4b],.logo a[data-v-f4c76c4b]{align-items:center;display:flex}.logo a img[data-v-f4c76c4b]{width:40px}.logo__name[data-v-f4c76c4b]{font-family:Rubik,sans-serif;font-size:40px;font-weight:600;line-height:125%}.menuNavBurger[data-v-f4c76c4b]{display:none;height:100%}@media (max-width:780px){header[data-v-f4c76c4b]{background-color:rgba(14,20,27,.9);height:50px;position:fixed;top:0;width:100vw}.header-content[data-v-f4c76c4b]{justify-content:space-between}.menuNav[data-v-f4c76c4b]{display:none}.menuNavBurger[data-v-f4c76c4b]{align-items:flex-end;display:flex;flex-direction:column;height:40px;position:relative}}';
-export {
-  Header_vue_vue_type_style_index_0_scoped_f4c76c4b_lang as default
-};
-//# sourceMappingURL=Header-styles-1.mjs-CNXq3AkX.js.map

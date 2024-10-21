@@ -17,7 +17,7 @@
 const Projects = [
   {
     title: "To do list",
-    img: "/projects/To-do-list.png",
+    img: "./projects/To-do-list.png",
     linkCode: "https://lerts007.github.io/To-do_list/",
     linkWebSite: "https://github.com/Lerts007/To-do_list",
     description: [
@@ -31,7 +31,7 @@ const Projects = [
   },
   {
     title: "SPA-elevator",
-    img: "/projects/SPA-elevator.png",
+    img: "./projects/SPA-elevator.png",
     linkCode: "https://lerts007.github.io/SPA-Elevator/",
     linkWebSite: "https://github.com/Lerts007/SPA-Elevator",
     description: [
@@ -47,7 +47,7 @@ const Projects = [
   },
   {
     title: "SPA с использованием API reqres.in",
-    img: "/projects/web_application_of_users.png",
+    img: "./projects/web_application_of_users.png",
     linkCode: "https://lerts007.github.io/web_application_of_users/",
     linkWebSite: "https://github.com/Lerts007/web_application_of_users",
     description: [
@@ -63,7 +63,7 @@ const Projects = [
   },
   {
     title: "SPA с использованием API openweathermap.org",
-    img: "/projects/WeatherAPIVue.png",
+    img: "./projects/WeatherAPIVue.png",
     linkCode: "https://lerts007.github.io/WeatherAPIVue/",
     linkWebSite: "https://github.com/Lerts007/WeatherAPIVue",
     description: [
@@ -75,7 +75,7 @@ const Projects = [
   },
   {
     title: "Landing page webStore",
-    img: "/projects/webStore.png",
+    img: "./projects/webStore.png",
     linkCode: "https://lerts007.github.io/webStoreLandingPage/",
     linkWebSite: "https://github.com/Lerts007/webStoreLandingPage",
     description: [

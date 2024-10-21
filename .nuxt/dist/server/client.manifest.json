@@ -1,61 +1,22 @@
 {
-  "_CmDYSWn3.js": {
+  "_DGN5Or3X.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CmDYSWn3.js",
+    "file": "DGN5Or3X.js",
     "name": "iconGitHub",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "_CpKYM5gW.js": {
+  "_JgcKX3xT.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CpKYM5gW.js",
+    "file": "JgcKX3xT.js",
     "name": "vue.f36acd1f",
-    "imports": [
-      "node_modules/nuxt/dist/app/entry.js"
-    ]
-  },
-  "components/iconSVG/IconAboutMe.vue": {
-    "resourceType": "script",
-    "module": true,
-    "prefetch": true,
-    "preload": true,
-    "file": "B9XMXOXi.js",
-    "name": "IconAboutMe",
-    "src": "components/iconSVG/IconAboutMe.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/nuxt/dist/app/entry.js"
-    ]
-  },
-  "components/iconSVG/IconMyStack.vue": {
-    "resourceType": "script",
-    "module": true,
-    "prefetch": true,
-    "preload": true,
-    "file": "D0x9saGw.js",
-    "name": "IconMyStack",
-    "src": "components/iconSVG/IconMyStack.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/nuxt/dist/app/entry.js"
-    ]
-  },
-  "components/iconSVG/IconPortfolio.vue": {
-    "resourceType": "script",
-    "module": true,
-    "prefetch": true,
-    "preload": true,
-    "file": "CGPkfri1.js",
-    "name": "IconPortfolio",
-    "src": "components/iconSVG/IconPortfolio.vue",
-    "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -65,23 +26,18 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BicrzGHJ.js",
+    "file": "B1ZYBjJM.js",
     "name": "default",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_CmDYSWn3.js"
-    ],
-    "dynamicImports": [
-      "components/iconSVG/IconAboutMe.vue",
-      "components/iconSVG/IconMyStack.vue",
-      "components/iconSVG/IconPortfolio.vue"
+      "_DGN5Or3X.js"
     ],
     "css": []
   },
-  "default.D-kDMJv-.css": {
-    "file": "default.D-kDMJv-.css",
+  "default.Bm_sh_SY.css": {
+    "file": "default.Bm_sh_SY.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -91,13 +47,13 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BSprbEUk.js",
+    "file": "D1SVj312.js",
     "name": "error-404",
     "src": "node_modules/nuxt/dist/app/components/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_CpKYM5gW.js"
+      "_JgcKX3xT.js"
     ],
     "css": []
   },
@@ -112,12 +68,12 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DXMJROLf.js",
+    "file": "Cj_RLyH6.js",
     "name": "error-500",
     "src": "node_modules/nuxt/dist/app/components/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_CpKYM5gW.js",
+      "_JgcKX3xT.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": []
@@ -133,7 +89,7 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BuhjLazM.js",
+    "file": "BCEWGEqo.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -149,20 +105,20 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BxsAndgE.js",
+    "file": "DCRikWUJ.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_CmDYSWn3.js"
+      "_DGN5Or3X.js"
     ],
     "css": [
-      "index.C7BcMFAj.css"
+      "index.COjizli2.css"
     ]
   },
-  "index.C7BcMFAj.css": {
-    "file": "index.C7BcMFAj.css",
+  "index.COjizli2.css": {
+    "file": "index.COjizli2.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true

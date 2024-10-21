@@ -49,7 +49,7 @@ const closeBlock = (event) => {
   display: none;
   position: absolute;
   z-index: 10;
-  top: -85px;
+  top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -57,6 +57,12 @@ const closeBlock = (event) => {
 }
 .activContact {
   display: block;
+
+  & :deep(html) {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 .noScrol {
   overflow-y: scroll;

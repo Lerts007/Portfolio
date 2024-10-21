@@ -11,14 +11,18 @@
 
 <script setup>
 const stack = [
-  { name: "HTML", img: "/stack/html.png", color: "#f97316" },
-  { name: "CSS", img: "/stack/css.png", color: "#3b82f6" },
-  { name: "SCSS", img: "/stack/scss.png", color: "#cc6699" },
-  { name: "JavaScript", img: "/stack/javascript.png", color: "#facc15" },
-  { name: "Vue", img: "/stack/vue.png", color: "#10b981" },
-  { name: "Vuex", img: "/stack/vuex.svg", color: "#10b981" },
-  { name: "Axios", img: "/stack/axios.svg", color: "#3b82f6" },
-  { name: "Nuxt.js", img: "/stack/nuxtjs.svg", color: "#10b981" },
+  { name: "HTML", img: "./stack/html.png", color: "#f97316" },
+  { name: "CSS", img: "./stack/css.png", color: "#3b82f6" },
+  { name: "SCSS", img: "./stack/scss.png", color: "#cc6699" },
+  {
+    name: "JavaScript",
+    img: "./stack/javascript.png",
+    color: "#facc15",
+  },
+  { name: "Vue", img: "./stack/vue.png", color: "#10b981" },
+  { name: "Vuex", img: "./stack/vuex.svg", color: "#10b981" },
+  { name: "Axios", img: "./stack/axios.svg", color: "#3b82f6" },
+  { name: "Nuxt.js", img: "./stack/nuxtjs.svg", color: "#10b981" },
 ];
 </script>
 

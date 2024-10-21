@@ -6,8 +6,8 @@
       @mouseover="hover[index] = true"
       @mouseout="hover[index] = false"
     >
+      <component :is="item.icon" :class="{ active: hover[index] }" />
       <a :href="item.href" @click="SlideMenu">
-        <component :is="item.icon" :class="{ active: hover[index] }" />
         {{ item.text }}
       </a>
     </li>
@@ -15,7 +15,10 @@
 </template>
 
 <script setup>
-import { ref, defineAsyncComponent } from "vue";
+import { ref } from "vue";
+import IconSvgIconAboutMe from "./iconSVG/IconAboutMe.vue";
+import IconMyStack from "./iconSVG/IconMyStack.vue";
+import IconPortfolio from "./iconSVG/IconPortfolio.vue";
 
 const props = defineProps(["activ"]);
 const emit = defineEmits();
@@ -23,23 +26,17 @@ const emit = defineEmits();
 const items = [
   {
     href: "#aboutMe",
-    icon: defineAsyncComponent(() =>
-      import("@/components/iconSVG/IconAboutMe.vue")
-    ),
+    icon: IconSvgIconAboutMe,
     text: "Обо мне",
   },
   {
     href: "#myStack",
-    icon: defineAsyncComponent(() =>
-      import("@/components/iconSVG/IconMyStack.vue")
-    ),
+    icon: IconMyStack,
     text: "Мой стэк",
   },
   {
     href: "#portfolio",
-    icon: defineAsyncComponent(() =>
-      import("@/components/iconSVG/IconPortfolio.vue")
-    ),
+    icon: IconPortfolio,
     text: "Мои проекты",
   },
 ];
@@ -60,15 +57,17 @@ ul {
 
   & li {
     margin-right: 20px;
+
+    display: flex;
+    gap: 10px;
+
     list-style-type: none;
     transition: transform 0.5s;
     cursor: pointer;
     & a {
-      display: flex;
-      gap: 10px;
       transition: color 0.5s;
     }
-    & :deep path {
+    & :deep(path) {
       transition: fill 0.5s;
     }
   }

@@ -3,7 +3,7 @@
     <div class="header-content content">
       <div class="logo">
         <a href="#">
-          <img src="/Logo.svg" alt="" />
+          <img src="../public/Logo.svg" alt="" />
         </a>
       </div>
       <div class="menuNavBurger">
